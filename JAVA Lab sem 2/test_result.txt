@@ -1,0 +1,22 @@
+Java version: 24.0.1
+JDBC driver: oracle.jdbc.driver.OracleDriver
+Driver version: 10.2
+Trying URL: jdbc:oracle:thin:@//LAPTOP-RTFQUSDR:1521/freepdb1
+FAILED: java.sql.SQLException
+Message: ORA-01017: invalid credential or not authorized; logon denied
+
+java.sql.SQLException: ORA-01017: invalid credential or not authorized; logon denied
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
+	at TestConn.main(TestConn.java:18)
